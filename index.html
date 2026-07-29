@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Successful — The Block Crew Chronicles</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #1a1a2e;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .hero {
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 50%, #1a1a2e 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 3px solid #3c7a3c;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #5cb85c;
+            letter-spacing: 3px;
+            margin-bottom: 0.5rem;
+        }
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+            font-style: italic;
+        }
+        .hero .tagline {
+            margin-top: 1rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+        .mission-box {
+            background: #16213e;
+            border: 1px solid #3c7a3c;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .mission-box h2 {
+            color: #5cb85c;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .chapters {
+            display: grid;
+            gap: 0.5rem;
+        }
+        .chapter-item {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            background: #1e2a45;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .chapter-item:hover {
+            background: #253252;
+        }
+        .chapter-item .num {
+            font-weight: bold;
+            color: #5cb85c;
+            min-width: 2rem;
+            font-size: 1.1rem;
+        }
+        .chapter-item .title {
+            flex: 1;
+            color: #ccc;
+        }
+        .chapter-item .mission {
+            color: #888;
+            font-size: 0.85rem;
+            margin-left: 1rem;
+        }
+        .characters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .character {
+            background: #1e2a45;
+            border-radius: 8px;
+            padding: 1rem;
+            border-left: 3px solid #5cb85c;
+        }
+        .character h3 {
+            color: #5cb85c;
+            font-size: 1rem;
+        }
+        .character p {
+            color: #999;
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+        }
+        .downloads {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.2s;
+            font-size: 1rem;
+        }
+        .btn-primary {
+            background: #3c7a3c;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #4a9a4a;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: #0f3460;
+            color: #aaa;
+            border: 1px solid #3c7a3c;
+        }
+        .btn-secondary:hover {
+            background: #1a4a80;
+            transform: translateY(-2px);
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #555;
+            font-size: 0.8rem;
+            border-top: 1px solid #2a2a4a;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .hero { padding: 2rem 1rem; }
+            .chapter-item { flex-wrap: wrap; }
+            .chapter-item .mission { margin-left: 2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="hero">
+    <h1>⛏️ Minecraft Successful</h1>
+    <p class="subtitle">A Story-Driven Mission Book</p>
+    <p class="tagline">Five players. Ten missions. One blocky world.</p>
+</div>
+
+<div class="container">
+    <div class="mission-box">
+        <h2>📖 The Book</h2>
+        <p>Follow <strong>The Block Crew</strong> — Stone, Red, Brick, Pick, and Gear — through 10 chapters of GTA-style missions. From their first iron dig to conquering the Ender Dragon and the Wither, every chapter blends an immersive story with real Minecraft strategies.</p>
+        <p style="margin-top: 0.5rem; color: #888;">21,000 words · 10 chapters · Minecraft version-agnostic</p>
+        
+        <div class="downloads">
+            <a href="https://github.com/Walusimbi-Leon1/minecraft-successful/releases/download/v1.0/Minecraft_Successful.pdf" class="btn btn-primary">📕 Download PDF</a>
+            <a href="https://github.com/Walusimbi-Leon1/minecraft-successful" class="btn btn-secondary">💻 View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="mission-box">
+        <h2>📚 Chapters</h2>
+        <div class="chapters">
+            <div class="chapter-item"><span class="num">1</span><span class="title">The First Dig</span><span class="mission">Iron</span></div>
+            <div class="chapter-item"><span class="num">2</span><span class="title">Bone Rush</span><span class="mission">Bones</span></div>
+            <div class="chapter-item"><span class="num">3</span><span class="title">Gold Heist</span><span class="mission">Gold</span></div>
+            <div class="chapter-item"><span class="num">4</span><span class="title">Emerald Exchange</span><span class="mission">Emeralds</span></div>
+            <div class="chapter-item"><span class="num">5</span><span class="title">Diamond Score</span><span class="mission">Diamonds</span></div>
+            <div class="chapter-item"><span class="num">6</span><span class="title">The Enchantment</span><span class="mission">Enchanting</span></div>
+            <div class="chapter-item"><span class="num">7</span><span class="title">Stronghold Run</span><span class="mission">The End Portal</span></div>
+            <div class="chapter-item"><span class="num">8</span><span class="title">End Battle</span><span class="mission">The Ender Dragon</span></div>
+            <div class="chapter-item"><span class="num">9</span><span class="title">Wither War</span><span class="mission">The Wither</span></div>
+            <div class="chapter-item"><span class="num">10</span><span class="title">The Successful Life</span><span class="mission">Finale</span></div>
+        </div>
+    </div>
+
+    <div class="mission-box">
+        <h2>🧱 The Block Crew</h2>
+        <div class="characters">
+            <div class="character"><h3>Stone</h3><p>Veteran miner. Practical, experienced, stubborn. The muscle.</p></div>
+            <div class="character"><h3>Red</h3><p>Crew leader. Ambitious, fast-talking, always scheming.</p></div>
+            <div class="character"><h3>Brick</h3><p>Enforcer. Hot-headed, loyal, always ready to fight.</p></div>
+            <div class="character"><h3>Pick</h3><p>Strategist. Cautious, smart, always has a plan.</p></div>
+            <div class="character"><h3>Gear</h3><p>Tech expert. Builder, inventor, redstone genius.</p></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Minecraft Successful &copy; 2026 · Built with 💚 by The Block Crew</p>
+    <p style="margin-top: 0.3rem;">Minecraft is a trademark of Mojang AB. This is an unofficial fan work.</p>
+</div>
+</body>
+</html>
